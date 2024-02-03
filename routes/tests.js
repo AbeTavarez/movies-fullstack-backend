@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 router.post("/", (req, res) => {
   res.send(`
     <div>
-    <h2>You said: ${req.body}</h2>
+    <h2>You said: ${req.body.message}</h2>
 </div>
     `);
 });
