@@ -21,4 +21,20 @@ router.post("/", (req, res) => {
     `);
 });
 
+router.put("/", (req, res) => {
+  res.send(`
+    <div>
+    <h2>Account Updated</h2>
+    </div>
+    `);
+});
+
+router.delete("/", (req, res) => {
+  res.send(`
+  <div>
+    <h2>Account Deleted</h2>
+</div>
+    `);
+});
+
 export default router;
